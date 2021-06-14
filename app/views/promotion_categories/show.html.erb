@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @promotion_category.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @promotion_category.code %>
+</p>
+
+<%= link_to 'Edit', edit_promotion_category_path(@promotion_category) %> |
+<%= link_to 'Back', promotion_categories_path %>
