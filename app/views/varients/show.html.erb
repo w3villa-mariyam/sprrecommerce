@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @varient.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @varient.price %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @varient.sku %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @varient.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @varient.height %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @varient.width %>
+</p>
+
+<p>
+  <strong>Depth:</strong>
+  <%= @varient.depth %>
+</p>
+
+<p>
+  <strong>Cost price:</strong>
+  <%= @varient.cost_price %>
+</p>
+
+<%= link_to 'Edit', edit_varient_path(@varient) %> |
+<%= link_to 'Back', varients_path %>

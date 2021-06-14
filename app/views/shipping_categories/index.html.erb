@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Shipping Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shipping_categories.each do |shipping_category| %>
+      <tr>
+        <td><%= shipping_category.name %></td>
+        <td><%= link_to 'Show', shipping_category %></td>
+        <td><%= link_to 'Edit', edit_shipping_category_path(shipping_category) %></td>
+        <td><%= link_to 'Destroy', shipping_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shipping Category', new_shipping_category_path %>

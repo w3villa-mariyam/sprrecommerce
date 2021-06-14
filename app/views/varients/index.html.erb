@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Varients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Sku</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th>Depth</th>
+      <th>Cost price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @varients.each do |varient| %>
+      <tr>
+        <td><%= varient.name %></td>
+        <td><%= varient.price %></td>
+        <td><%= varient.sku %></td>
+        <td><%= varient.weight %></td>
+        <td><%= varient.height %></td>
+        <td><%= varient.width %></td>
+        <td><%= varient.depth %></td>
+        <td><%= varient.cost_price %></td>
+        <td><%= link_to 'Show', varient %></td>
+        <td><%= link_to 'Edit', edit_varient_path(varient) %></td>
+        <td><%= link_to 'Destroy', varient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Varient', new_varient_path %>

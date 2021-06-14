@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product_taxon.product_id %>
+</p>
+
+<p>
+  <strong>Taxon:</strong>
+  <%= @product_taxon.taxon_id %>
+</p>
+
+<%= link_to 'Edit', edit_product_taxon_path(@product_taxon) %> |
+<%= link_to 'Back', product_taxons_path %>
